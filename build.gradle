@@ -25,9 +25,11 @@ allprojects {
 task clean(type: Delete) {
   delete rootProject.buildDir
 }
+
 def buildNumber() {
   return isCi() ? 222 : 111
 }
+
 def isCi() {
   return false
 }
